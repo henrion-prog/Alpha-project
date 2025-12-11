@@ -1,5 +1,6 @@
 // ========== CONFIGURATION ==========
 // Detect environment and set API URL accordingly
+window.alert("Never make any payment without pure confirmation")
 const isLocalFile = window.location.protocol === 'file:';
 const API_BASE_URL = isLocalFile 
     ? 'http://localhost:3000/api'
