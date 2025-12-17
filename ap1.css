@@ -60,6 +60,7 @@ header {
     box-shadow: 0 4px 20px rgba(201, 164, 122, 0.15);
     border-bottom: 2px solid #F5C47D;
      border-bottom: 2px solid #F5C47D;
+     top: 0px;
 }
 
 nav {
@@ -825,7 +826,7 @@ footer {
     }
 
     nav {
-        gap: 15px;
+        gap: 10px;
     }
 
     .nav-links {
@@ -844,13 +845,13 @@ footer {
     }
 
     .hero-container {
-        flex-direction: column;
+        flex-direction: column-reverse;
         padding: 0;
         gap: 0;
     }
 
     .hero-content {
-        max-width: 100%;
+        max-width: 77%;
         text-align: center;
         margin-bottom: 40px;
     }
@@ -920,15 +921,15 @@ footer {
         }
 
         .menu-toggle span {
-            width: 30px;
+            width: 25px;
             height: 3px;
             background: #4A2D18;
             transition: all 0.3s;
         }
 
-        @media (max-width: 768px) {
+        @media (min-width: 768px) {
             .menu-toggle {
-                display: flex;
+                display: none;
             }
 
             .nav-links {
